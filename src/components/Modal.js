@@ -12,7 +12,7 @@ const Modal = ({ isVisible, onClose }) => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:3000/referrals', {
+            const response = await axios.post('https://accredian-backend-task-dns1.onrender.com/referrals', {
                 name,
                 email,
                 referralMessage,
