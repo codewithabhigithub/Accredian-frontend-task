@@ -1,6 +1,6 @@
-Go to Accredian Page
+Go to Accredian Page<br>
 <a href="https://accredian-frontend-task-r5kx1u7sy-codewithabhigithubs-projects.vercel.app/">
-  <img border="0" alt="Accredian" src="https://i.postimg.cc/pVG3tXGy/Screenshot-2024-11-27-173458.png" width="100" height="100">
+  <img border="0" alt="Accredian" src="https://i.postimg.cc/pVG3tXGy/Screenshot-2024-11-27-173458.png" width="100%" height="100">
 </a>
 
 # Getting Started with Create React App
