@@ -89,10 +89,10 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            <div className='w-[1920px] h-[785px] bg-[#EEF5FF] mt-20 flex flex-col items-center justify-around'>
+            <div className='w-full h-[785px] bg-[#EEF5FF] mt-20 flex flex-col items-center justify-around'>
                 <p className='font-semibold text-[#1A202C] text-2xl'>How Do I <span className='text-[#1A73E8]'>Refer?</span></p>
-                <div className='w-[1387px] h-[491px]'>
-                    <img className='w-[1387px] h-[491px]' src={Circle} alt="Circle" />
+                <div className='w-full max-w-[1387px] h-[491px]'>
+                    <img className='w-full max-w-[1387px] h-[491px]' src={Circle} alt="Circle" />
                     <div className='flex justify-evenly items-center mt-[-340px] '>
                         <div className=' flex flex-col justify-between items-center'>
                             <img className='w-[88px] h-[66.96px] ml-5 mb-10' src={Man} alt="Man" />
@@ -111,22 +111,22 @@ const LandingPage = () => {
                 <button className='bg-[#1A73E8] text-[#FFFFFF] rounded-lg w-[236px] h-[64px] px-[50px] py-[8px] font-normal text-xl' onClick={() => setShowModal(true)}>Refer Now</button>
             </div>
 
-            <div className='w-[1920px] mt-20'>
-                <p className='font-sans font-semibold text-[#1A202C] text-3xl text-center'>What Are The <span className='text-[#1A73E8]'>Referral Benefits?</span></p>
+            <div className='w-full mt-20'>
+                <p className='font-sans font-semibold text-[#1A202C] text-xl sm:text-2xl lg:text-3xl text-center'>What Are The <span className='text-[#1A73E8]'>Referral Benefits?</span></p>
             </div>
 
-            <div className='w-[1920px] flex justify-center mt-10'>
-                <div className='w-[1230px] h-[54px] flex justify-end'>
-                    <div className='w-[125.18px] h-[17px] flex justify-between items-center'>
-                        <p className='font-normal text-xl text-[#3C4852]'>Enrolled</p>
-                        <div className='w-[34.18px] h-[17px] rounded-full border-2 border-[#3C4852] flex justify-end'>
+            <div className='w-full flex justify-center mt-10'>
+                <div className='w-full max-w-[1230px] h-auto lg:h-[54px] flex justify-end'>
+                    <div className='w-full max-w-[125.18px] h-auto lg:h-[17px] flex justify-between items-center'>
+                        <p className='font-normal text-base sm:text-lg lg:text-xl text-[#3C4852]'>Enrolled</p>
+                        <div className='w-full max-w-[34.18px] h-[17px] rounded-full border-2 border-[#3C4852] flex justify-end'>
                             <img src={Dot} alt="Dot" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='w-[1920px] flex justify-center -mt-5'>
+            <div className='w-full flex justify-center -mt-5'>
                 <div className='w-[1230px] h-[572px] flex justify-between'>
                     <div className='w-[270px] h-[572px] drop-shadow-2xl'>
                         <div className='bg-[#1A73E8] w-[270px] h-[50px] rounded-tl-lg rounded-tr-lg flex justify-around items-center'>
@@ -169,27 +169,6 @@ const LandingPage = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className='w-[921px] h-[561px] drop-shadow-2xl'>
-                        <div className='bg-[#afcef7] w-[921px] h-[58px] rounded-tl-xl rounded-tr-xl flex items-center justify-between '>
-                            <p className='text-xl font-bold text-[#1350A0] ml-8'>Programs</p>
-                            <div className='flex justify-between items-center w-[400px] mr-8'>
-                                <p className='text-xl font-bold text-[#1350A0]'>Referrer Bonus</p>
-                                <p className='text-xl font-bold text-[#1350A0]'>Referee Bonus</p>
-                            </div>
-                        </div>
-                        <div className='bg-[#f8fbff] w-[921px] h-[503px] rounded-bl-xl rounded-br-xl'>
-                            <div className='flex justify-between items-center'>
-                                <div className='w-[387px]  h-[48px] flex justify items-center'>
-                                    <img src={Cap} alt="Cap" className='mr-2 -mt-6' />
-                                    <p className='text-xl font-normal text-[#3C4852]'>Professional Certificate Program in Product Management</p>
-                                </div>
-                                <div className='flex justify-around items-center w-[460px]'>
-                                    <p className='text-xl font-normal text-[#3C4852]'>₹ 7,000</p>
-                                    <p className='text-xl font-normal text-[#3C4852]'>₹ 9,000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                     <div class="w-[921px] h-[561px] drop-shadow-2xl">
                         <table class="w-full">
                             <thead class='bg-[#afcef7] w-[921px] h-[58px] rounded-tl-xl rounded-tr-xl'>
@@ -241,14 +220,14 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            <div className='w-[1920px] flex justify-center mt-5'>
-                <div className='w-[1230px] h-[54px] flex justify-end'>
-                    <button className='w-[174.66px] h-[41px] rounded-lg border-2 border-[#B6B6B6] text-[#9aa0a5] font-semibold text-lg flex items-center justify-center '>Show More <img className='ml-4 ' src={Below_Arrow} alt="Right_Arrow" /></button>
+            <div className='w-full flex justify-center mt-5 '>
+                <div className='w-[90%] max-w-[1230px] h-auto lg:h-[54px] flex justify-end'>
+                    <button className='w-full max-w-[174.66px] h-[41px] rounded-lg border-2 border-[#B6B6B6] text-[#9aa0a5] font-semibold text-lg flex items-center justify-center '>Show More <img className='ml-4 ' src={Below_Arrow} alt="Right_Arrow" /></button>
                 </div>
             </div>
 
-            <div className='w-[1920px] mt-5 flex justify-center'>
-                <button className='bg-[#1A73E8] text-[#FFFFFF] rounded-lg w-[236px] h-[64px] px-[50px] py-[8px] font-normal text-xl' onClick={() => setShowModal(true)}>Refer Now</button>
+            <div className='w-full mt-5 flex justify-center '>
+                <button className=' bg-[#1A73E8] text-[#FFFFFF] rounded-lg w-full max-w-[236px] h-[64px] px-[50px] py-[8px] font-normal text-xl' onClick={() => setShowModal(true)}>Refer Now</button>
             </div>
 
             <div className='w-full mt-20 lg:mt-40 flex justify-center'>
