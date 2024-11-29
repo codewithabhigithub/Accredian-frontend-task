@@ -75,7 +75,7 @@ const LandingPage = () => {
                                 </span>
                             </p>
                         </div>
-                        <button className="lg:ml-8 bg-[#1A73E8] text-[#FFFFFF] rounded-lg w-auto px-8 py-3 text-sm sm:text-base lg:w-[192px] lg:h-[54px] lg:px-[45px] lg:py-[8px] mt-6">
+                        <button className="lg:ml-8 bg-[#1A73E8] text-[#FFFFFF] rounded-lg w-auto px-8 py-3 text-sm sm:text-base lg:w-[192px] lg:h-[54px] lg:px-[45px] lg:py-[8px] mt-6" onClick={() => setShowModal(true)}>
                             Refer Now
                         </button>
                     </div>
