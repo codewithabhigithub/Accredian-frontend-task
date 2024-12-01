@@ -184,7 +184,7 @@ const LandingPage = () => {
                 <p className='font-sans font-semibold text-[#1A202C] text-xl sm:text-2xl lg:text-3xl text-center'>What Are The <span className='text-[#1A73E8]'>Referral Benefits?</span></p>
             </div>
 
-            <div className='w-full flex justify-center mt-10 lg:mb-0 mb-10 lg:px-[0px] px-4'>
+            <div className='w-full flex justify-center mt-10 lg:mb-0 mb-10 lg:px-[0px] px-[25px]'>
                 <div className='w-full max-w-[1230px] h-auto lg:h-[54px] flex justify-end'>
                     <div className='w-full max-w-[125.18px] h-auto lg:h-[17px] flex justify-between items-center'>
                         <p className='font-normal text-base sm:text-lg lg:text-xl text-[#3C4852]'>Enrolled</p>
