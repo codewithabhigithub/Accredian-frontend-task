@@ -89,7 +89,7 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            <div className='w-full h-[785px] bg-[#EEF5FF] mt-20 flex flex-col items-center justify-around'>
+            {/* <div className='w-full h-[785px] bg-[#EEF5FF] mt-20 flex flex-col items-center justify-around'>
                 <p className='font-semibold text-[#1A202C] text-2xl'>How Do I <span className='text-[#1A73E8]'>Refer?</span></p>
                 <div className='w-full max-w-[1387px] h-[491px]'>
                     <img className='w-full max-w-[1387px] h-[491px]' src={Circle} alt="Circle" />
@@ -109,13 +109,82 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <button className='bg-[#1A73E8] text-[#FFFFFF] rounded-lg w-[236px] h-[64px] px-[50px] py-[8px] font-normal text-xl' onClick={() => setShowModal(true)}>Refer Now</button>
+            </div> */}
+
+
+            <div className="w-full lg:h-auto h-[880px]  bg-[#EEF5FF] mt-20 flex flex-col items-center justify-around px-4 py-10">
+                <p className="font-semibold text-[#1A202C] text-2xl text-center mb-[210px] lg:-mb-[0px]">
+                    How Do I <span className="text-[#1A73E8]">Refer?</span>
+                </p>
+                <div className="w-full max-w-[1387px] h-auto relative flex flex-col items-center">
+                    {/* Image Section */}
+                    <img
+                        className="lg:w-full w-[740px] max-w-[1387px] md:h-[491px] object-contain lg:rotate-0 rotate-90"
+                        src={Circle}
+                        alt="Circle"
+                    />
+
+
+                    {/* Overlay Content */}
+                    <div className="absolute w-full lg:h-full h-[760px] lg:-mt-[0px] -mt-[250px] top-0 flex flex-col md:flex-row items-center justify-evenly">
+                        {/* First Icon and Text */}
+                        <div className="flex flex-col justify-between items-center text-center">
+                            <img
+                                className="lg:w-[88px] w-[32px] h-auto lg:mb-5 mb-3"
+                                src={Man}
+                                alt="Man"
+                            />
+                            <p className="lg:w-[199px] w-[120px] lg:text-base text-xs font-normal text-[#000000]">
+                                Submit referrals easily via our website’s referral section.
+                            </p>
+                        </div>
+
+                        {/* Second Icon and Text */}
+                        <div className="flex flex-col justify-between items-center text-center">
+                            <img
+                                className="lg:w-[65.11px] w-[25px] h-auto lg:mb-5 mb-3"
+                                src={NotePad}
+                                alt="Notepad"
+                            />
+                            <p className="lg:w-[199px] w-[110px] lg:text-base text-xs font-normal text-[#000000]">
+                                Earn rewards once your referral joins an Accredian program.
+                            </p>
+                        </div>
+
+                        {/* Third Icon and Text */}
+                        <div className="flex flex-col justify-between items-center text-center">
+                            <img
+                                className="lg:w-[65px] w-[25px] h-auto lg:mb-5 mb-3"
+                                src={Wallet}
+                                alt="Wallet"
+                            />
+                            <p className="lg:w-[199px] w-[120px] lg:text-base text-xs font-normal text-[#000000]">
+                                Both parties receive a bonus 30 days after program enrollment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    className="bg-[#1A73E8] text-[#FFFFFF] rounded-lg px-8 py-3 text-base md:text-xl lg:mt-5 mt-[230px]"
+                    onClick={() => setShowModal(true)}
+                >
+                    Refer Now
+                </button>
             </div>
 
-            <div className='w-full mt-20'>
+
+
+
+
+
+
+
+
+            <div className='w-full lg:mt-20 mt-[50px] lg:mb-0 -mb-5'>
                 <p className='font-sans font-semibold text-[#1A202C] text-xl sm:text-2xl lg:text-3xl text-center'>What Are The <span className='text-[#1A73E8]'>Referral Benefits?</span></p>
             </div>
 
-            <div className='w-full flex justify-center mt-10'>
+            <div className='w-full flex justify-center mt-10 lg:mb-0 mb-10 lg:px-[0px] px-[25px]'>
                 <div className='w-full max-w-[1230px] h-auto lg:h-[54px] flex justify-end'>
                     <div className='w-full max-w-[125.18px] h-auto lg:h-[17px] flex justify-between items-center'>
                         <p className='font-normal text-base sm:text-lg lg:text-xl text-[#3C4852]'>Enrolled</p>
@@ -126,99 +195,116 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            <div className='w-full flex justify-center -mt-5'>
-                <div className='w-[1230px] h-[572px] flex justify-between'>
-                    <div className='w-[270px] h-[572px] drop-shadow-2xl'>
-                        <div className='bg-[#1A73E8] w-[270px] h-[50px] rounded-tl-lg rounded-tr-lg flex justify-around items-center'>
-                            <p className='text-lg font-semibold text-[#FFFFFF]'>ALL PROGRAMS</p>
+            <div className="w-full flex justify-center -mt-5">
+                <div className="w-full max-w-[1230px] flex lg:justify-between flex-wrap">
+                    {/* Sidebar */}
+                    <div className="w-full md:w-[270px] drop-shadow-2xl mb-5 md:mb-0 lg:px-[0px] px-[25px]">
+                        <div className="bg-[#1A73E8] w-full h-[50px] rounded-tl-lg rounded-tr-lg flex justify-between items-center px-4">
+                            <p className="text-lg font-semibold text-[#FFFFFF]">ALL PROGRAMS</p>
                             <img src={Right_Arrow_White} alt="" />
                         </div>
-                        <div className='bg-[#FFFFFF] w-[270px] h-[522px] rounded-bl-xl rounded-br-xl flex flex-col justify-around items-center'>
-                            <div className='w-[213px] h-[50px] flex justify-between items-center'>
-                                <p className='text-lg font-semibold text-[#3C4852]'>Product Management</p>
-                                <img src={Right_Arrow_Black} alt="" />
-                            </div>
-                            <div className='w-[213px] h-[50px] flex justify-between items-center'>
-                                <p className='text-lg font-semibold text-[#3C4852]'>Strategy & Leadership</p>
-                                <img src={Right_Arrow_Black} alt="" />
-                            </div>
-
-                            <div className='w-[213px] h-[50px] flex justify-between items-center'>
-                                <p className='text-lg font-semibold text-[#3C4852]'>Business Management</p>
-                                <img src={Right_Arrow_Black} alt="" />
-                            </div>
-                            <div className='w-[213px] h-[50px] flex justify-between items-center'>
-                                <p className='text-lg font-semibold text-[#3C4852]'>Fintech</p>
-                                <img src={Right_Arrow_Black} alt="" />
-                            </div>
-                            <div className='w-[213px] h-[50px] flex justify-between items-center'>
-                                <p className='text-lg font-semibold text-[#3C4852]'>Senior Management</p>
-                                <img src={Right_Arrow_Black} alt="" />
-                            </div>
-                            <div className='w-[213px] h-[50px] flex justify-between items-center'>
-                                <p className='text-lg font-semibold text-[#3C4852]'>Data Science</p>
-                                <img src={Right_Arrow_Black} alt="" />
-                            </div>
-                            <div className='w-[213px] h-[50px] flex justify-between items-center'>
-                                <p className='text-lg font-semibold text-[#3C4852]'>Digital Transformation</p>
-                                <img src={Right_Arrow_Black} alt="" />
-                            </div>
-                            <div className='w-[213px] h-[50px] flex justify-between items-center'>
-                                <p className='text-lg font-semibold text-[#3C4852]'>Business Analytics</p>
-                                <img src={Right_Arrow_Black} alt="" />
-                            </div>
+                        <div className="bg-[#FFFFFF] w-full h-auto md:h-[522px] rounded-bl-xl rounded-br-xl flex flex-col justify-around items-center p-4">
+                            {[
+                                "Product Management",
+                                "Strategy & Leadership",
+                                "Business Management",
+                                "Fintech",
+                                "Senior Management",
+                                "Data Science",
+                                "Digital Transformation",
+                                "Business Analytics",
+                            ].map((program, index) => (
+                                <div
+                                    key={index}
+                                    className="w-full flex justify-between items-center mb-4"
+                                >
+                                    <p className="text-base md:text-lg font-semibold text-[#3C4852]">
+                                        {program}
+                                    </p>
+                                    <img src={Right_Arrow_Black} alt="" />
+                                </div>
+                            ))}
                         </div>
                     </div>
-                    <div class="w-[921px] h-[561px] drop-shadow-2xl">
-                        <table class="w-full">
-                            <thead class='bg-[#afcef7] w-[921px] h-[58px] rounded-tl-xl rounded-tr-xl'>
+
+                    {/* Table */}
+                    <div className="w-full md:w-[921px]  drop-shadow-2xl overflow-x-auto lg:px-[0px] px-[25px]">
+                        <table className="w-full text-left border-collapse">
+                            <thead className="bg-[#afcef7] w-full h-[58px] rounded-tl-xl rounded-tr-xl">
                                 <tr>
-                                    <th class="text-left p-2 text-lg font-bold text-[#1350A0] "><p className='ml-4'>Programs</p></th>
-                                    <th class="text-left p-2 text-lg font-bold text-[#1350A0] w-[150px]">Referrer Bonus</th>
-                                    <th class="text-left p-2 text-lg font-bold text-[#1350A0] w-[150px]">Referee Bonus</th>
+                                    <th className="p-3 text-sm md:text-lg font-bold text-[#1350A0]">
+                                        <p className="ml-4">Programs</p>
+                                    </th>
+                                    <th className="p-3 text-sm md:text-lg font-bold text-[#1350A0]">
+                                        Referrer Bonus
+                                    </th>
+                                    <th className="p-3 text-sm md:text-lg font-bold text-[#1350A0]">
+                                        Referee Bonus
+                                    </th>
                                 </tr>
                             </thead>
-                            <tbody class="bg-[#f8fbff] w-[921px] h-[503px] rounded-bl-xl rounded-br-xl ">
-                                <tr>
-                                    <td class="p-2 flex items-center text-xl font-normal text-[#3C4852] mt-3"><img src={Cap} alt="Cap" className='mr-2 ml-4' /> Professional Certificate Program in Product Management</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 7,000</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 9,000</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2 flex items-center text-xl font-normal text-[#3C4852]"><img src={Cap} alt="Cap" className='mr-2 ml-4' /> PG Certificate Program in Strategic Product Management</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 9,000</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 11,000</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2 flex items-center text-xl font-normal text-[#3C4852]"><img src={Cap} alt="Cap" className='mr-2 ml-4' /> Executive Program in Data Driven Product Management</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 10,000</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 10,000</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2 flex items-center text-xl font-normal text-[#3C4852]"><img src={Cap} alt="Cap" className='mr-2 ml-4 -mt-7' /> Executive Program in Product Management and Digital Transformation</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 10,000</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 10,000</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2 flex items-center text-xl font-normal text-[#3C4852]"><img src={Cap} alt="Cap" className='mr-2 ml-4' /> Executive Program in Product Management</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 10,000</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 10,000</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2 flex items-center text-xl font-normal text-[#3C4852]"><img src={Cap} alt="Cap" className='mr-2 ml-4 ' /> Advanced Certification in Product Management</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 10,000</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 10,000</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2 flex items-center text-xl font-normal text-[#3C4852]"><img src={Cap} alt="Cap" className='mr-2 ml-4 -mt-7' /> Executive Program in Product Management and Project Management</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 10,000</td>
-                                    <td class="p-2 text-xl font-normal text-[#3C4852]">₹ 10,000</td>
-                                </tr>
+                            <tbody className="bg-[#f8fbff] w-full lg:h-[490px] rounded-bl-xl rounded-br-xl">
+                                {[
+                                    {
+                                        program:
+                                            "Professional Certificate Program in Product Management",
+                                        referrer: "₹ 7,000",
+                                        referee: "₹ 9,000",
+                                    },
+                                    {
+                                        program:
+                                            "PG Certificate Program in Strategic Product Management",
+                                        referrer: "₹ 9,000",
+                                        referee: "₹ 11,000",
+                                    },
+                                    {
+                                        program:
+                                            "Executive Program in Data Driven Product Management",
+                                        referrer: "₹ 10,000",
+                                        referee: "₹ 10,000",
+                                    },
+                                    {
+                                        program:
+                                            "Executive Program in Product Management and Digital Transformation",
+                                        referrer: "₹ 10,000",
+                                        referee: "₹ 10,000",
+                                    },
+                                    {
+                                        program: "Executive Program in Product Management",
+                                        referrer: "₹ 10,000",
+                                        referee: "₹ 10,000",
+                                    },
+                                    {
+                                        program: "Advanced Certification in Product Management",
+                                        referrer: "₹ 10,000",
+                                        referee: "₹ 10,000",
+                                    },
+                                    {
+                                        program:
+                                            "Executive Program in Product Management and Project Management",
+                                        referrer: "₹ 10,000",
+                                        referee: "₹ 10,000",
+                                    },
+                                ].map((item, index) => (
+                                    <tr key={index} className="border-b">
+                                        <td className="p-3 flex items-center text-sm md:text-xl font-normal text-[#3C4852]">
+                                            <img src={Cap} alt="Cap" className="mr-2 ml-4" />
+                                            {item.program}
+                                        </td>
+                                        <td className="p-3 text-sm md:text-xl font-normal text-[#3C4852]">
+                                            {item.referrer}
+                                        </td>
+                                        <td className="p-3 text-sm md:text-xl font-normal text-[#3C4852]">
+                                            {item.referee}
+                                        </td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
+
 
             <div className='w-full flex justify-center mt-5 '>
                 <div className='w-[90%] max-w-[1230px] h-auto lg:h-[54px] flex justify-end'>
